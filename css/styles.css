@@ -114,12 +114,14 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   margin-left: auto;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .nav-studio {
   color: var(--accent-text-color);
   position: relative;
-   
 }
+    
 .nav-studio-first::after {
   content: "";
   width: 48px;
@@ -428,6 +430,7 @@ background-color: var(--light-bg-color);
   justify-content: center;
   align-items: center;
   color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
@@ -454,6 +457,7 @@ background-color: var(--light-bg-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-contacts);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team {
@@ -515,6 +519,7 @@ background-color: var(--light-bg-color);
   width: 44px;
   height: 44px;
   gap: 10px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-icon {
   fill: var(--white-text-color);
@@ -579,6 +584,7 @@ color: var(--accent-text-color);
   background-color: var(--portfolio-button);
   border: none;
   padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portf-button:hover,
 .portf-button:focus {
