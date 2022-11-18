@@ -47,7 +47,7 @@ body {
 .tel {
   display: flex;
   align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .email-icon,
 .tel-icon {
@@ -114,12 +114,13 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   margin-left: auto;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .nav-studio {
   color: var(--accent-text-color);
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
     
 .nav-studio-first::after {
@@ -152,6 +153,8 @@ body {
 .tel-icon:focus {
   color: var(--accent-text-color);
   fill: currentColor;
+  
+
 }
 .email-color {
   color: var(--secondary-text-color);
@@ -163,6 +166,11 @@ body {
 .nav-portfolio,
 .nav-contacts {
   color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.email-icon, .tel-icon{
+   transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button {
   font-family: 'Roboto';
@@ -362,10 +370,11 @@ padding-top: 27px;
   justify-content: center;
   align-items: center;
   color: var(--soc-icon-fill);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social-icon {
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*.team-soc-item {
   fill: var(--soc-icon-fill);
@@ -514,12 +523,13 @@ background-color: var(--light-bg-color);
   display: flex;
   justify-content: center;
   align-items: baseline;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-item {
   width: 44px;
   height: 44px;
   gap: 10px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .footer-social-icon {
   fill: var(--white-text-color);
@@ -527,6 +537,8 @@ background-color: var(--light-bg-color);
   align-items: baseline;
   justify-content: center;
   margin-top: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .footer-soc-link:hover,
@@ -584,7 +596,7 @@ color: var(--accent-text-color);
   background-color: var(--portfolio-button);
   border: none;
   padding: 6px 22px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portf-button:hover,
 .portf-button:focus {
@@ -621,6 +633,7 @@ color: var(--accent-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portf-img-text {
@@ -651,7 +664,7 @@ transition: transform 300ms ease;
 }
 .portf-item {
   flex-basis: calc((100% - 60) / 3);
-  
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portf-item:hover {
